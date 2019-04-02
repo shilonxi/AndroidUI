@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XML序言-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#6ff26f">
+    <!--宽度匹配父辈，高度自我设定，背景填充颜色-->
+    <ImageView
+        android:id="@+id/image_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/head"
+        />
+    <!--图片控件，增设ID，调整大小，图片指定-->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#149e14"
+        android:text="FXD48"
+        />
+    <!--文本控件，增设ID，宽度占中，居中对齐，大小40，设定颜色-->
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:background="#59c459"
+        android:text="搜索"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:drawableLeft="@mipmap/search"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        />
+    <!--按钮控件，增设ID，调整位置，左图右字-->
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XML序言-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4f1d9">
+    <!--宽高匹配，背景填色-->
+    <include layout="@layout/title_layout" />
+    <!--顶部添加布局文件-->
+    <AdapterViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="1240"
+        android:layout_centerVertical="true"
+        />
+    <!--滑动控件，增设ID，宽高匹配，切换设速，垂直居中-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="上一张"
+        android:textSize="18sp"
+        android:textColor="#0ea1a1"
+        android:background="#e5eef9"
+        android:onClick="prev"
+        />
+    <!--按钮控件，依次设置宽高，位置，内容，背景，功能-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="自动播"
+        android:textSize="18sp"
+        android:textColor="#0ea1a1"
+        android:background="#e5eef9"
+        android:onClick="auto"
+        />
+    <!--按钮控件，依次设置宽高，位置，内容，背景，功能-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="下一张"
+        android:textSize="18sp"
+        android:textColor="#0ea1a1"
+        android:background="#e5eef9"
+        android:onClick="next"
+        />
+    <!--按钮控件，依次设置宽高，位置，内容，背景，功能-->
+</RelativeLayout>

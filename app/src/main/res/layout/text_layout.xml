@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.androidui.Text_Activity">
+    <!--线性布局，要添加垂直定向这个属性-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="备忘录"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal" />
+    <!--文本控件，宽度匹配，高度适应，选择文字内容，大小和颜色，水平居中-->
+
+    <EditText
+        android:id="@+id/text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="写下想要呈现的内容吧！" />
+    <!--编辑文本控件，增设ID，宽度匹配，高度适应，显示提示性文本-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/toast_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="提醒"
+        android:layout_weight="1" />
+    <!--按钮控件，增设ID，高度适应，添加文本，占据左半边-->
+
+    <Button
+        android:id="@+id/intent_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="切换"
+        android:layout_weight="1" />
+    <!--按钮控件，增设ID，高度适应，添加文本，占据右半边-->
+
+    </LinearLayout>
+    <!--线性布局，要添加水平定向这个属性-->
+
+</LinearLayout>
